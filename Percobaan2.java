@@ -14,7 +14,15 @@ public class Percobaan2 {
         bilangan = sc.nextInt();
         System.out.print("Pangkat: ");
         pangkat = sc.nextInt();
-        System.out.println(hitungPangkat(bilangan, pangkat));
+        System.out.println(hitungPangkat(bilangan, pangkat));        
+        System.out.print("Hitung pangkat"+"("+bilangan+","+pangkat+")"+": ");
+        for (int i = 1; i <= pangkat; i++) {
+            System.out.print(bilangan);
+            if (i < pangkat) {
+                System.out.print("x");
+            }
+        }
+        System.out.print(" = " + hitungPangkat(bilangan, pangkat));
         sc.close();
 
     }
